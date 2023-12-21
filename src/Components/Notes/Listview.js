@@ -16,7 +16,7 @@ function Listview (props){
     }
 
     function startEdit(){
-        props.update(props.id);
+        props.update(props.id,props.title,props.content,props.col);
     }
     
     async function changeColour(i){
@@ -48,7 +48,7 @@ function Listview (props){
                         </div>
                         
                     </div>
-                    {show?( <div className="hidecolor ">
+                    {show?( <div className="hidecolor "><p>Double click on color</p>
                             <div style={{backgroundColor:colorarray[0]}} onClick={()=>changeColour(0)}></div>
                             <div style={{backgroundColor:colorarray[1]}} onClick={()=>changeColour(1)}></div>
                             <div style={{backgroundColor:colorarray[2]}} onClick={()=>changeColour(2)}></div>

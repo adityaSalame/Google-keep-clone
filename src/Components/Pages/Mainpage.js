@@ -19,7 +19,7 @@ function MainPage (){
    useEffect(()=>{
       let arr=localStorage.getItem("allNotes");
       if(!arr) localStorage.setItem("allNotes",JSON.stringify(arr));
-
+      setshowedit(false);
 
 
    },[])
@@ -55,15 +55,20 @@ function MainPage (){
        });
      }
 
-     const updateText=(id)=>{
+     const updateText=(id,title,content,color)=>{
       setEditidx(id);
          setshowedit(true);
-         seteditNote({
-            title:notesarray[id].title,
-            content:notesarray[id].content,
-        
-            color:notesarray[id].color,
-         })
+         seteditNote(prev=>{return {...prev,
+            title:title, color:color, content:content
+         }})
+     }
+
+     function changeText(e){
+      const {name, value}=e.target;
+      seteditNote((prev)=>{
+          return{...prev,[name]:value}
+      })
+      console.log(editnote);
      }
 
      function editedList(){
@@ -85,19 +90,22 @@ function MainPage (){
          <Aside/>
          <div className="notes_section">
             <Newnote notes={added}/>
-            {/* {edit?(<div className="edit" style={{backgroundColor:editnote.color}}>
+            {edit?
+            (<div className="edit" style={{backgroundColor:editnote.color}}>
                <div className="noteTitle">
-                  <input type="text" value={editnote.title} onChange={(e)=>updateText(e)}/>
+                  <input type="text" name="title" placeholder="Title" value={editnote.title} onChange={(e)=>changeText(e)}></input>
                </div>
                <div className="noteinput"> 
-                  <textarea  id="txt" col={50} placeholder="Take a note.." name="content" value={editnote.content} onChange={(e)=>updateText(e)}></textarea> 
+                  <textarea  id="txt" col={50} placeholder="Edit the note.." name="content" value={editnote.content} onChange={(e)=>changeText(e)}></textarea> 
                </div>
                <div className="options">
                   
                   <button  onClick={editedList}>Close</button>
                </div>
-            </div>):
-            (<div></div>)} */}
+            </div>)
+            :
+            (<div></div>)
+            }
             <div className="listview">
             {
                notesarray.map((note,idx)=>{
