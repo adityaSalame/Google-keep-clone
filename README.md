@@ -11,7 +11,7 @@ It also allows user to change the color of note.
 - [Usage](#usage)
 - [Technologies Used](#technologies-used)
 - [Contributing](#contributing)
-- [License](#license)
+- [Getting Started with Create React App](#gettingStartedwithCreateReactApp)
 
 ## Features
 
@@ -40,6 +40,30 @@ It also allows user to change the color of note.
     ```bash
     Copy code
     npm install
+
+## Usage
+
+1. To start the application, run the following command:
+
+    ```bash
+    Copy code
+    npm start
+
+    This will start the development server and open the app in your default web browser.
+
+## Technologies Used
+    React
+    CSS (or styled-components, etc.) for styling
+    LocalStorage or a backend service for data persistence
+
+## Contributing
+    Contributions are welcome! If you'd like to contribute to this project, please follow these steps:
+
+    Fork the project
+    Create your feature branch (git checkout -b feature/YourFeature)
+    Commit your changes (git commit -m 'Add YourFeature')
+    Push to the branch (git push origin feature/YourFeature)
+    Open a pull request
 
 
 
