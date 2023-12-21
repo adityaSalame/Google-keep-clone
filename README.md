@@ -1,3 +1,48 @@
+# Google Keep Clone Project - React App
+
+This project is a clone of Google Keep built using React. 
+It allows users to create, edit and delete notes.
+It also allows user to change the color of note.
+
+## Table of Contents
+
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Technologies Used](#technologies-used)
+- [Contributing](#contributing)
+- [License](#license)
+
+## Features
+
+- Create new notes with titles and content
+- Edit existing notes
+- Delete notes
+- Change note colors
+
+
+
+## Installation
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/your-username/google-keep-clone.git
+   
+2. Navigate to the project directory:
+
+    ```bash
+    Copy code
+    cd google-keep-clone
+
+3. Install dependencies:
+
+    ```bash
+    Copy code
+    npm install
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
