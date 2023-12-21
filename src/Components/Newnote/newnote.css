@@ -58,4 +58,8 @@ textarea{
     border-radius: 8px;
     cursor: pointer;
 }
+
+button{
+    padding: 0 1rem;
+}
   

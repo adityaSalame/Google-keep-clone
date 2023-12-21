@@ -22,6 +22,19 @@
 }
 
 .edit{
-  width:50vw;
+  width:55vw;
   margin:1rem auto;
+  padding:1rem;
+  border-radius: 8px;
+}
+
+.editTitle{
+  margin:1rem auto;
+  font-size:medium;
+    font-weight: 600;
+}
+
+.editContent{
+  margin:1rem auto;
+  font-size: small;
 }

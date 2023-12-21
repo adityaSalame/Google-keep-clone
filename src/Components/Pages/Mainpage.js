@@ -93,10 +93,10 @@ function MainPage (){
             {edit?
             (<div className="edit" style={{backgroundColor:editnote.color}}>
                <div className="noteTitle">
-                  <input type="text" name="title" placeholder="Title" value={editnote.title} onChange={(e)=>changeText(e)}></input>
+                  <input type="text" className="editTitle" name="title" placeholder="Title" value={editnote.title} onChange={(e)=>changeText(e)}></input>
                </div>
                <div className="noteinput"> 
-                  <textarea  id="txt" col={50} placeholder="Edit the note.." name="content" value={editnote.content} onChange={(e)=>changeText(e)}></textarea> 
+                  <textarea  id="txt" col={50} className="editContent" placeholder="Edit the note.." name="content" value={editnote.content} onChange={(e)=>changeText(e)}></textarea> 
                </div>
                <div className="options">
                   
