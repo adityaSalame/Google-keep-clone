@@ -1,0 +1,35 @@
+.opt{
+    display: flex;
+    justify-content: end;
+}
+
+.title{
+    font-weight: 600;
+    font-size: medium;
+}
+
+.content{
+    font-weight: 400;
+    font-size:medium;
+}
+
+
+
+.item{
+    border: 1px solid grey;
+    border-radius: 8px;
+    padding:0.5rem;
+    margin:0.5rem 0rem;
+}
+
+.hidecolor{
+    display: flex;
+    justify-content: space-around;
+}
+
+.hidecolor div{
+    width:2rem;
+    height:2rem;
+    border-radius: 25%;
+    border:1px solid black;
+}

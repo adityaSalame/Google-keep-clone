@@ -1,0 +1,61 @@
+
+
+.noteTitle{
+    font-size: large;
+    background-color: transparent;
+}
+
+.newnote{
+    margin:1rem auto 1rem auto;
+    padding:1rem;
+    width: 55vw;
+}
+
+input{
+    background-color: transparent;
+    width:50vw;
+    border:none;
+    padding:0.2rem;
+    margin-bottom:0.5rem;
+}
+
+.titleinput{
+    background-color: transparent;
+    font-size:medium;
+    font-weight: 600;
+}
+
+.contentinput{
+    background-color: transparent;
+    font-size: small;
+}
+
+input:focus{
+    outline: none;
+  
+  }
+
+.options{
+    display: flex;
+}
+
+textarea{
+    min-height: 20vh;
+    width:50vw;
+    padding:0.5rem;
+    background-color: transparent;
+}
+
+.hidecolor{
+    width:30vw;
+    border:1px solid black;
+    padding:1rem;
+}
+
+.hidecolor .close{
+    width:5rem;
+    text-align: center;
+    border-radius: 8px;
+    cursor: pointer;
+}
+  

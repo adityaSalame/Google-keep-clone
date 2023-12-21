@@ -1,0 +1,13 @@
+.aisdemenu{
+    padding:1rem;
+    width:20vw;
+}
+
+.menuopt{
+    display: flex;
+    padding:1rem;
+}
+
+.menuopt div{
+    padding-right:0.5rem;
+}
